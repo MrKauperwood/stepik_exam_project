@@ -20,5 +20,5 @@ class Page_Object(BasePage):
                self.get_text_message(*ProductPageLocators.PRICE_BOOK_AFTER_ADD2), "Prices are not equal (two)"
 
     def check_message_after_add_product(self):
-        assert self.get_text_message(*ProductPageLocators.NAME_OF_THE_BOOK_ORIGINAL) in\
+        assert self.get_text_message(*ProductPageLocators.NAME_OF_THE_BOOK_ORIGINAL) ==\
                self.get_text_message(*ProductPageLocators.INFO_ADD_TO_BASKET), "Product name other"
