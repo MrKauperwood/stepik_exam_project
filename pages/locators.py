@@ -8,6 +8,8 @@ class ProductPageLocators():
     PRICE_BOOK_ORIGINAL = (By.CSS_SELECTOR, ".col-sm-6.product_main .price_color")
     PRICE_BOOK_AFTER_ADD1 = (By.CSS_SELECTOR, ".basket-mini")
     PRICE_BOOK_AFTER_ADD2 = (By.CSS_SELECTOR, ".alert-info .alertinner p:nth-child(1)")
+    SUCCESS_MESSAGE = INFO_ADD_TO_BASKET
+    DISAPPEAR_ITEM = INFO_ADD_TO_BASKET
 
 
 
