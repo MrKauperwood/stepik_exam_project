@@ -2,7 +2,7 @@ from .base_page import BasePage
 from .locators import ProductPageLocators
 
 
-class Page_Object(BasePage):
+class ProductPage(BasePage):
     def check_after_add_product_to_basket(self):
         self.check_message_after_add_product()
         self.check_price_basket_total()

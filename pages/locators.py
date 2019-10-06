@@ -12,7 +12,7 @@ class ProductPageLocators():
     DISAPPEAR_ITEM = INFO_ADD_TO_BASKET
 
 class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    #LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     GO_TO_BASKET = (By.CSS_SELECTOR, ".btn-group a")
     ALL_ITEMS_IN_BASKET = (By.CSS_SELECTOR, ".basket_formset")
     INFO_BUSKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner p")
@@ -20,6 +20,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
 
 
