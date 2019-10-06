@@ -11,5 +11,12 @@ class ProductPageLocators():
     SUCCESS_MESSAGE = INFO_ADD_TO_BASKET
     DISAPPEAR_ITEM = INFO_ADD_TO_BASKET
 
+class MainPageLocators():
+    GO_TO_BASKET = (By.CSS_SELECTOR, ".btn-group a")
+    ALL_ITEMS_IN_BASKET = (By.CSS_SELECTOR, ".basket_formset")
+    INFO_BUSKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner p")
+
+
+
 
 

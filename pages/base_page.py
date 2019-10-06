@@ -2,6 +2,8 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from .locators import ProductPageLocators, MainPageLocators
+
 import math
 
 class BasePage():
@@ -50,3 +52,7 @@ class BasePage():
             return False
 
         return True
+
+    def go_to_basket_from_main(self):
+        basket_link = self.browser.find_element(*MainPageLocators.GO_TO_BASKET)
+        basket_link.click()
