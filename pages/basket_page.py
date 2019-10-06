@@ -5,7 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from .locators import ProductPageLocators, MainPageLocators
 from .base_page import BasePage
 
-class BasketPage(BasePage):
+
+class Basket_Page(BasePage):
     def check_empty_basket(self):
         assert self.is_not_element_present(*MainPageLocators.ALL_ITEMS_IN_BASKET), \
             "The basket is not empty, but should be"

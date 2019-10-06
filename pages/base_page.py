@@ -1,4 +1,5 @@
 from selenium.common.exceptions import NoAlertPresentException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -56,3 +57,11 @@ class BasePage():
     def go_to_basket_from_main(self):
         basket_link = self.browser.find_element(*MainPageLocators.GO_TO_BASKET)
         basket_link.click()
+
+    def is_element_present(self, how, what):
+        try:
+            self.browser.find_element(how, what)
+        except(NoSuchElementException):
+            return False
+        return True
+

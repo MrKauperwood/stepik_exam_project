@@ -1,5 +1,5 @@
 from .pages.product_page import Page_Object
-from .pages.basket_page import BasketPage
+from .pages.basket_page import Basket_Page
 import pytest
 import time
 
@@ -41,7 +41,7 @@ def test_guest_can_add_product_to_basket(browser, promo_code):
 
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
-    page = BasketPage(browser, link)
+    page = Basket_Page(browser, link)
     page.open()
     page.go_to_basket_from_main()
     page.check_empty_basket()
