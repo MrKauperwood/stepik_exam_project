@@ -11,11 +11,12 @@ class ProductPageLocators():
     SUCCESS_MESSAGE = INFO_ADD_TO_BASKET
     DISAPPEAR_ITEM = INFO_ADD_TO_BASKET
 
+
 class MainPageLocators():
-    #LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     GO_TO_BASKET = (By.CSS_SELECTOR, ".btn-group a")
     ALL_ITEMS_IN_BASKET = (By.CSS_SELECTOR, ".basket_formset")
     INFO_BUSKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner p")
+
 
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
@@ -24,6 +25,7 @@ class LoginPageLocators():
     REG_PASS = (By.CSS_SELECTOR, "#id_registration-password1")
     REG_PASS_REPEAT = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_BUTTON = (By.CSS_SELECTOR, "#register_form button")
+
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
